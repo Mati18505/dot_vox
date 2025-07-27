@@ -8,7 +8,7 @@ use nom::{
 use crate::parser::validate_count;
 
 /// A renderable voxel model.
-#[derive(Debug, PartialEq, Eq)]
+#[derive(Debug, Clone, PartialEq, Eq)]
 pub struct Model {
     /// The size of the model in voxels.
     pub size: Size,
